@@ -1,0 +1,87 @@
+<html>
+<head>
+<!-- <link rel="text/css" href="stylesheetlogin.css"/> -->
+</head>
+ <style>
+.topnav {
+  background-color: #99CC00;
+  overflow: hidden;
+}
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  }
+  .topnav a:hover {
+  background-color: #ddd;
+  color: green;
+}
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.button
+{
+height:25pt;
+background-color:white;
+}
+
+.container
+{
+margin-left:200px;
+background-color:gray;
+height:390px;
+width:950px;
+}
+</style> 
+
+<div class="topnav">
+  <a class="active" href="htmllogon.html">Login</a>
+   <a href="signup.html">SignUp</a>
+</div>
+<form action="signup.html" style="border:1px solid #ccc">
+  <div class="container">
+    <h1>Sign Up</h1>
+   <form action="htmllogon.html">
+
+<center>
+<table width="350" height="190" border="1" bgcolor="#99CC00">
+<tr>
+<th height="45">Enter your email id 	
+<input type="email" placeholder="Enter Email" name="email" required>
+</th>
+</tr>
+<tr>
+<th height="45">Enter your password 
+    <input type="password" placeholder="Enter Password" name="psw" required>
+	</th>
+<tr>
+<th height="45">Confirm password 
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+</th>
+</tr>
+<tr>
+<th height="45">
+    <div class="clearfix">
+	<button type="submit" class="button">Sign Up</button>
+      <button type="button" class="button" onclick="history.go(0)">Cancel</button>
+      
+    </div>
+	</th>
+	<tr>
+<!-- <th height="45">
+    
+	<label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+	</th>
+	</tr> -->
+	</table>
+	<center/>
+  </div>
+</form>
+<html>
