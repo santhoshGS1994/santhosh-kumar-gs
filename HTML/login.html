@@ -1,0 +1,64 @@
+<html >
+<head>
+<title>Login  page</title>
+<link rel="stylesheet"type="text/css" href="style1.css"/>
+</head>
+
+<div class="topnav">
+  <a class="active" href="login.html">Login</a>
+  <a  href="signup.html">SignUp</a>
+</div>
+<form action="login.html" onsubmit="check()">
+<div class="container">
+<h1>Login</h1>
+<br><br>
+<center>
+<table width="345" border="1" bgcolor="#99CC00">
+
+<tr>
+<th height="34">Enter your email</th>
+<td><input type="email" id="lemail" required/></td>
+</tr>
+
+<tr>
+<th height="33">Enter your passowrd</th>
+<td><input type="password" id="lpwd" required/></td>
+</tr>
+
+<tr>
+<th height="50" colspan="2">
+<input type="submit" id="login" class="button"value="Submit" height="20%" />
+<input type="submit"  class="button" value="clear data"  onclick="history.go(0)"/>
+<!--<input type="submit" class="button" value="Signup" href="signup.html"/>
+-->
+</th>
+</tr>
+</div>
+</form>
+</table>
+<center/>
+</form>
+</html>
+<script type="text/javascript">
+function check()
+{
+    var storedun=localStorage.getItem("email");
+    var storedpwd=localStorage.getItem("pwd");
+
+
+    var usn=document.getElementById("lemail");
+    var logpwd=document.getElementById("lpwd");
+
+    if(usn.value !==storedun  || logpwd.value!==storedpwd)
+    {
+alert("check with username and password")
+   
+}
+       
+        else
+        {
+                alert("login successfull")
+            }
+    }
+
+</script>

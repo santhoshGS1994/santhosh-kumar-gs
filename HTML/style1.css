@@ -1,0 +1,43 @@
+
+.topnav {
+  background-color: #99CC00;
+  overflow: hidden;
+}
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  }
+  .topnav a:hover {
+  background-color: #ddd;
+  color: green;
+}
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.button
+{
+height:25pt;
+background-color:white;
+}
+
+.container
+{
+margin-left:200px;
+background-color:gray;
+height:390px;
+width:950px;
+}
+.tbl
+{
+    width:350px ;
+    height:190px;
+     border:5em;
+     padding: 10%;
+     background-color:#99CC00;
+}

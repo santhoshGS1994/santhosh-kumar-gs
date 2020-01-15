@@ -1,0 +1,88 @@
+<html>
+<head>
+    <title>SignUp</title>
+        <link rel="stylesheet"type="text/css" href="style1.css"/>
+</head>
+
+
+<div class="topnav">
+  <a  href="login.html">Login</a>
+   <a class="active" href="signup.html">SignUp</a>
+</div>
+<form action="signup.html" style="border:1px solid #ccc">
+  <div class="container">
+    <h1>Sign Up</h1>
+   <form action="login.html">
+
+<center>
+<table width="350" height="190" border="1" bgcolor="#99CC00">
+
+           <tr>              
+            <th height="45">Enter your Name
+            </th>                
+            <td>
+            <input type="text" id="name"placeholder="username" name="name" required>
+            </td>
+            </tr>
+<tr>
+<th height="45">Enter your email id </th>
+<td>
+<input type="email" id="email"placeholder="Enter Email" name="email" required>
+</td>	
+</tr>
+<tr>
+<th height="45">Enter your password </th>
+<td>
+    <input type="password" id="pwd" placeholder="Enter Password" name="password" required>
+</td>
+</tr>
+
+<tr>
+<th height="45">Confirm password </th>
+<td>
+    <input type="password" id="cpwd" placeholder="Repeat Password" name="rpt-password" required>
+</td>
+</tr>
+<tr>
+    <th height="45">Enter mobile No  </th>
+    <td>
+    <input type="number" id="mn"placeholder="mobileno" name="mn" required>
+</td>
+</tr>
+<tr>
+<th height="45">
+   
+    <button type="submit" class="button" onclick="store()">Sign Up</button>
+
+      <button type="button" class="button" onclick="history.go(0)">Cancel</button>
+    
+</tr>
+	
+	<tr>
+<!-- <th height="45">
+    
+	<label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+	</th>
+	</tr> -->
+	</table>
+	<center/>
+  </div>
+</form>
+</html>
+<script type="text/javascript">
+
+function store()
+{
+    var inputname=document.getElementById("name")
+    var inputemail=document.getElementById("email");
+    var inputpass=document.getElementById("pwd");
+    var inputnumbr=document.getElementById("mn");
+
+    localStorage.setItem("name",inputname.value);
+    localStorage.setItem("email",inputemail.value);
+    localStorage.setItem("pwd",inputpass.value);
+    localStorage.setItem("mn",inputnumbr.value);
+}
+</script>
